@@ -5,3 +5,14 @@
   background-color: lightgreen;
   color: darkslateblue;
 }
+
+.box{
+  background-color: darkslateblue;
+  border:gray;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  height: 300px;
+  width: 200px;
+  color: white;
+}
