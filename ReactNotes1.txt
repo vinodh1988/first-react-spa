@@ -1,0 +1,20 @@
+x.js
+
+export const a=20;
+
+export const b={sno:1,name:"raj"}
+
+export class D{
+
+}
+
+export default D;
+
+y.js
+
+
+import {a as A,b,D} from './x'
+
+import Temp from './x';
+
+//here Temp referes to D

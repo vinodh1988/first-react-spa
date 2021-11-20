@@ -1,0 +1,42 @@
+New Model 
+
+SPA 
+
+What needs to be considered
+
+1. ES5 development not sufficient [ we Need language or versions which has advanced features]
+2. Unnecassary library code, testing code should not be packed
+3. During development the code should be properly readable and maintainable, and the 
+environment should support the code maintainance and packaging,testing and running
+4. When it comes to production no matter whether it is a simple web page or complex web
+page , browser always run javascript ,css and html
+
+
+Development
+
+   HTML
+   CSS - Css, SCSS, LESS
+   JS - typescript, jsx, tsx, es2020
+   
+   server - node based  web server to run and test the application
+   
+ From development to production
+ 
+  1. convert languages like ts to js
+  2. convert es2020,es2019 to es2015
+  3. minify the code
+  4. test the code
+  5. package the code [ bundling- take the opening file , walk through the code
+  and referred libraries ,attach only used code and detach un necassary code that
+  is never used]
+   
+ Production
+ 
+    HTML
+	CSS -css
+	JS  - es5,es2015
+	
+	server - apache, tomcat, iis
+	
+	
+	

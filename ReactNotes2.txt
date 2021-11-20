@@ -1,0 +1,25 @@
+
+
+2013
+
+
+
+
+2015  -class
+
+
+createClass - used to create component - es5 way???
+
+class- class components 
+
+Functional Component - function is represented as component
+
+  html,css, data and events
+  
+  class Box extends React.Component{
+     ---
+  }
+  
+  
+  <Box/>
+  <Box/>

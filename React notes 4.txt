@@ -1,0 +1,23 @@
+
+Old Model
+
+Development
+
+
+   html
+   css  - [user developed, libraries] 
+   javascript  -[user developed ,libraries]
+   
+   Webserver - apache/iis/tomcat
+
+ 
+
+Production
+
+
+   html
+   css   - minified [user developed, libraries]
+   javascript  - minified [user developed, libraries
+   
+   webserver - apache/iis/tomcat
+   
