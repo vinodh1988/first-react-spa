@@ -7,9 +7,16 @@ import Box from './Box';
 
 const App =()=>{
 
-   
+function changeTheme(current:string){
+  
+    setTheme(current);
+    current=="theme1"?setBtnColor1('btn btn-dark'):setBtnColor1('btn btn-light')
+    current=="theme2"?setBtnColor2('btn btn-dark'):setBtnColor2('btn btn-light')
+    
+}
+
 const [titles]=useState(['Fruits','Vegetables','Spices']) 
-const [theme,setTheme]=useState('theme2')
+const [theme,setTheme]=useState('theme1')
 const [btnColor1,setBtnColor1]=useState('btn btn-dark')
 const [btnColor2,setBtnColor2]=useState('btn btn-light')
     
@@ -17,8 +24,8 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
       <div className="home">
 
               <h1>Home</h1>
-           <button className={btnColor1}>Theme1</button> &nbsp;&nbsp;&nbsp;&nbsp;  
-           <button className={btnColor2}>Theme2</button>
+           <button className={btnColor1} onClick={()=>{changeTheme('theme1')}}>Theme1</button> &nbsp;&nbsp;&nbsp;&nbsp;  
+           <button className={btnColor2} onClick={()=>{changeTheme('theme2')}}>Theme2</button>
 
               <hr/>
              {
