@@ -8,14 +8,21 @@ import Box from './Box';
 const App =()=>{
 
    
-const [titles,setTitles]=useState(['Fruits','Vegetables','Spices']) 
+const [titles]=useState(['Fruits','Vegetables','Spices']) 
+const [theme,setTheme]=useState('theme2')
+const [btnColor1,setBtnColor1]=useState('btn btn-dark')
+const [btnColor2,setBtnColor2]=useState('btn btn-light')
     
     return(
       <div className="home">
+
               <h1>Home</h1>
+           <button className={btnColor1}>Theme1</button> &nbsp;&nbsp;&nbsp;&nbsp;  
+           <button className={btnColor2}>Theme2</button>
+
               <hr/>
              {
-               titles.map((x,index)=><Box key={index} title={x} data="Later it ll be fixed"></Box>)
+               titles.map((x,index)=><Box key={index} theme={theme} title={x} data="Later it ll be fixed"></Box>)
              }
       </div>
     )

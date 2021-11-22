@@ -3,12 +3,13 @@
 type boxitem={
     title:string;
     data:string;
+    theme:string;
 }
 
-const Box=({title,data}: boxitem)=>{
+const Box=({title,data,theme}: boxitem)=>{
     return(
-    <div className="box">
-        <h1>{title}</h1>
+    <div className={theme}>
+      <h1>{title}</h1>
         <hr/>
         {data}
     </div>

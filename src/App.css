@@ -6,9 +6,20 @@
   color: darkslateblue;
 }
 
-.box{
+.theme1{
   background-color: darkslateblue;
   border:gray;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  height: 300px;
+  width: 200px;
+  color: white;
+}
+
+.theme2{
+  background-color: rgb(250, 82, 70);
+  border:rgb(112, 45, 45);
   float: left;
   margin: 20px;
   padding: 10px;
