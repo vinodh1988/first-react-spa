@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react' 
 import './App.css';
 import Box from './Box';
+import People from './People';
 
 
 
@@ -31,6 +32,8 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
              {
                titles.map((x,index)=><Box key={index} theme={theme} title={x} data="Later it ll be fixed"></Box>)
              }
+
+             <People></People>
       </div>
     )
 }

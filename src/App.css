@@ -1,7 +1,7 @@
 .home{
   padding: 20px;
   width: 1000px;
-  height: 800px;
+  min-height: 800px;
   background-color: lightgreen;
   color: darkslateblue;
 }

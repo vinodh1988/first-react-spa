@@ -1,0 +1,30 @@
+
+
+Component -> Class, function
+
+                  State, props, Template
+				  
+				  
+				  Props would be usually received from parent component
+				  State would be within in the component and it is bound to change
+				  Template 
+				  
+				    Template will usually interpolating props and states
+					and hence template code has to be merged with js data
+					
+					
+			First time, a component is instantiated, a Component template is prepared and Rendered on the screen
+			it is called Mounting
+			
+			componentDidMount(){
+			
+			}
+			
+			Change in state will trigger Re rendering [ but not automatically
+			we have to explicitly call setState]
+			
+			in case of useState , appropriate set method
+			
+			componentDidUpdate(){
+			
+			}
