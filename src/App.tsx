@@ -3,6 +3,7 @@ import {useState} from 'react'
 import './App.css';
 import Box from './Box';
 import People from './People';
+import ReduxFather from './ReduxLayerComponents/ReduxFather';
 
 
 
@@ -29,6 +30,10 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
            <button className={btnColor2} onClick={()=>{changeTheme('theme2')}}>Theme2</button>
 
               <hr/>
+
+          <div style={{overflow:"hidden" ,backgroundColor:"Yellow", padding:"10px"}} >
+                <ReduxFather></ReduxFather>
+          </div>
             <div  style={{overflow:"hidden"}}>
              {
                titles.map((x,index)=><Box key={index} theme={theme} title={x} data="Later it ll be fixed"></Box>)
@@ -37,6 +42,8 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
           <div className="alert alert-success">
              <People></People>
           </div>
+
+         
       </div>
     )
 }
