@@ -29,11 +29,14 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
            <button className={btnColor2} onClick={()=>{changeTheme('theme2')}}>Theme2</button>
 
               <hr/>
+            <div  style={{overflow:"hidden"}}>
              {
                titles.map((x,index)=><Box key={index} theme={theme} title={x} data="Later it ll be fixed"></Box>)
              }
-
+             </div>
+          <div className="alert alert-success">
              <People></People>
+          </div>
       </div>
     )
 }
