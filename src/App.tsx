@@ -4,8 +4,7 @@ import './App.css';
 import Box from './Box';
 import People from './People';
 import ReduxFather from './ReduxLayerComponents/ReduxFather';
-
-
+import Isolated from './ReactComponents/Isolated'
 
 const App =()=>{
 
@@ -39,6 +38,10 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
                titles.map((x,index)=><Box key={index} theme={theme} title={x} data="Later it ll be fixed"></Box>)
              }
              </div>
+        <div style={{overflow: "hidden"}}>
+             <Isolated/>
+             </div>
+        
           <div className="alert alert-success">
              <People></People>
           </div>
