@@ -6,6 +6,7 @@ import People from './People';
 import ReduxFather from './ReduxLayerComponents/ReduxFather';
 import Isolated from './ReactComponents/Isolated'
 
+
 const App =()=>{
 
 function changeTheme(current:string){
@@ -39,7 +40,7 @@ const [btnColor2,setBtnColor2]=useState('btn btn-light')
              }
              </div>
         <div style={{overflow: "hidden"}}>
-             <Isolated/>
+             <Isolated data="Message!!! Message!!!"/>
              </div>
         
           <div className="alert alert-success">

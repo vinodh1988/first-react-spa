@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import PubSub from 'pubsub-js';
 
-const Isolated=()=>{
+const Isolated=({data}:any)=>{
     useEffect(()=>{
         PubSub.subscribe("message-generated",(msg,data)=>{
             console.log( msg, data );
             setMessage(data)
         })
     })
-    const [message,setMessage]=useState("Redux Message will be updated here too....!")
+    const [message,setMessage]=useState(data)
     
     return(
         <div className="alert alert-light">
