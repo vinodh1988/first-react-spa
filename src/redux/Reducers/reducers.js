@@ -20,7 +20,9 @@ export const firstReducer =(state={message:" Hello Redux !!!",cities:cities},act
     switch(action.type){
         case "MESSAGE_ACTION":
                   PubSub.publish('message-generated',action.data);
-                  return {message:action.data}
+                  return {...state,message:action.data}
+        case "CITY_ACTION":
+            return {...state,cities:[...state.cities,action.data]}
         default:
                   return state;
     }
