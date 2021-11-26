@@ -14,7 +14,8 @@ import PubSub from 'pubsub-js'
    since action returns an object, the currently returned object by the
    currently execution action will be passed as second parameter to all the reducers
 */ 
-export const firstReducer =(state={message:" Hello Redux !!!"},action)=>{
+const cities=['Chennai','Mumbai','Delhi','Hyderabad']
+export const firstReducer =(state={message:" Hello Redux !!!",cities:cities},action)=>{
       
     switch(action.type){
         case "MESSAGE_ACTION":
