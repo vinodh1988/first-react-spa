@@ -19,7 +19,10 @@ import {msgbox} from './types';
           </p>
         <div className="alert alert-dark">
           <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}}/>
-          <button className="btn btn-dark" onClick={()=>addCity(city)}>
+          <button className="btn btn-dark" onClick={()=>{
+              addCity(city)
+              setCity("")
+        }}>
               add New City</button>
          </div>
         </div>

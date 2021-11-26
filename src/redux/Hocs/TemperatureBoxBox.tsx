@@ -9,7 +9,9 @@ const mapStateToProps=(state:any)=>{
 }
 
 const mapActionToProps=(dispatch:any)=>{
-    return bindActionCreators({addCity:()=>{},getTemperature:()=>{}},dispatch)
+    return bindActionCreators({addCity:(city)=>{
+        return {type:"CITY_ACTION",data:city}
+    },getTemperature:()=>{}},dispatch)
 }
 
 const TemperatureBoxHOC=connect(mapStateToProps,mapActionToProps)(TemperatureBox)
