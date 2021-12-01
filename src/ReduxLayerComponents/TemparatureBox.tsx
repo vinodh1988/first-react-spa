@@ -3,8 +3,9 @@ import {msgbox} from './types';
 
  const TemperatureBox=({cities,addCity,getTemparature}:any)=>{
     const [city,setCity]=useState("");
-    const [current,setCurrent]=useState("");
+    const [current,setCurrent]=useState("Chennai");
     return(
+
         <div className="card">
         <div className="card-body">
           <h4 className="card-title">Weather Data</h4>
@@ -13,7 +14,7 @@ import {msgbox} from './types';
                       {cities.map((x:any)=><option key={x}>{x}</option>)}
                   </select>
                   <button className="btn btn-dark" 
-                  onClick={()=>getTemparature(current)}>
+                  onClick={()=>{getTemparature(current)}}>
                       Get Temperature
                   </button>
           </p>

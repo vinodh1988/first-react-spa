@@ -15,7 +15,10 @@ import PubSub from 'pubsub-js'
    currently execution action will be passed as second parameter to all the reducers
 */ 
 const cities=['Chennai','Mumbai','Delhi','Hyderabad']
-export const firstReducer =(state={message:" Hello Redux !!!",cities:cities},action)=>{
+const temperatureData={city:"Dummy",temp:"Dummy",humidity:"Dummy",feels_like:"Dummy"}
+
+export const firstReducer 
+=(state={message:" Hello Redux !!!",cities:cities,temperatureData:temperatureData},action)=>{
       
     switch(action.type){
         case "MESSAGE_ACTION":
@@ -23,6 +26,8 @@ export const firstReducer =(state={message:" Hello Redux !!!",cities:cities},act
                   return {...state,message:action.data}
         case "CITY_ACTION":
             return {...state,cities:[...state.cities,action.data]}
+        case "TEMPERATURE_ACTION":
+            return {...state,temperatureData:action.data}
         default:
                   return state;
     }
